@@ -6,7 +6,12 @@
     <title>Central de Votações Freenbecky</title>
     <style>
         /* Estilos simplificados */
-        body { font-family: Arial, sans-serif; margin: 0; background: #f0f2f5; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            background: #f0f2f5;
+            padding-bottom: 60px; /* Espaço para o footer fixo */
+        }
         header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
         nav { background: #3498db; padding: 10px; }
         nav ul { list-style: none; padding: 0; margin: 0; text-align: center; }
@@ -15,7 +20,18 @@
         .container { max-width: 800px; margin: 20px auto; padding: 15px; }
         .voto { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .btn { display: inline-block; background: #e74c3c; color: white; padding: 8px 15px; text-decoration: none; border-radius: 3px; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        footer { 
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +43,7 @@
     <nav>
         <ul>
             <li><a href="#nineentertain">🎬 NineEntertain</a></li>
-            <li><a href="#kcl">🏆 KCL Awards</a></li> <!-- Nova seção adicionada -->
+            <li><a href="#kcl">🏆 KCL Awards</a></li>
         </ul>
     </nav>
 
@@ -49,37 +65,38 @@
             </div>
         </div>
 
-        <!-- Nova Seção KCL Awards -->
-       <div class="voto" id="kcl">
-    <h2> KCL Awards 2025</h2>
-        
-    <!-- Freen Sarocha -->
-    <div class="candidato">
-        <h3>Freen Sarocha Chankimha</h3>
-        <div class="link-voto">
-            <p>Categoria: Atriz Popular</p> <!-- Alterado de h4 para p -->
-            <a href="https://awards.komchadluek.net/KA7" class="btn" target="_blank">Votar Aqui</a>
+        <!-- Seção KCL Awards -->
+        <div class="voto" id="kcl">
+            <h2> KCL Awards 2025</h2>
+            
+            <!-- Freen Sarocha -->
+            <div class="candidato">
+                <h3>Freen Sarocha Chankimha</h3>
+                <div class="link-voto">
+                    <p>Categoria: Atriz Popular</p>
+                    <a href="https://awards.komchadluek.net/KA7" class="btn" target="_blank">Votar Aqui</a>
+                </div>
+            </div>
+
+            <!-- Becky -->
+            <div class="candidato">
+                <h3>Becky Rebecca Patricia Armstrong</h3>
+                <div class="link-voto">
+                    <p>Categoria: Atriz Popular</p>
+                    <a href="https://awards.komchadluek.net/KA7" class="btn" target="_blank">Votar Aqui</a>
+                </div>
+
+                <div class="link-voto">
+                    <h3>Freenbecky</h3>
+                    <p>Categoria: Casal popular</p>
+                    <a href="https://awards.komchadluek.net/KA8" class="btn" target="_blank">Votar Aqui</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Becky -->
-    <div class="candidato">
-        <h3>Becky Rebecca Patricia Armstrong</h3>
-        <div class="link-voto">
-            <p>Categoria: Atriz Popular</p> <!-- Alterado de h4 para p -->
-            <a href="https://awards.komchadluek.net/KA7" class="btn" target="_blank">Votar Aqui</a>
-        </div>
-
-        <div class="link-voto">
-            <h3>Freenbecky</h3>
-            <p>Categoria: Casal popular</p>
-            <a href="https://awards.komchadluek.net/KA8" class="btn" target="_blank">Votar Aqui</a>
-        </div>
-    </div>
-</div>
 
     <footer>
-        <p>Acompanhe atualizações nas redes sociais</p>
+        <p style="margin: 0; padding: 5px;">Acompanhe atualizações nas redes sociais</p>
     </footer>
 </body>
 </html>
