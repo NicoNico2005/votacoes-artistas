@@ -5,21 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Votações Freenbecky</title>
     <style>
-        /* Estilos simplificados */
+        /* ===== ESTILOS GERAIS ===== */
         body { 
             font-family: Arial, sans-serif; 
             margin: 0; 
             background: #f0f2f5;
-            padding-bottom: 60px; /* Espaço para o footer fixo */
+            padding-bottom: 60px;
         }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-        nav { background: #3498db; padding: 10px; }
-        nav ul { list-style: none; padding: 0; margin: 0; text-align: center; }
-        nav li { display: inline-block; margin: 0 15px; }
-        nav a { color: white; text-decoration: none; }
-        .container { max-width: 800px; margin: 20px auto; padding: 15px; }
-        .voto { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; background: #e74c3c; color: white; padding: 8px 15px; text-decoration: none; border-radius: 3px; }
+
+        /* ===== HEADER ===== */
+        header { 
+            background: #2c3e50; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+        }
+
+        /* ===== NAVEGAÇÃO ===== */
+        nav { 
+            background: #3498db; 
+            padding: 10px; 
+        }
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            text-align: center; 
+        }
+        nav li { 
+            display: inline-block; 
+            margin: 0 15px; 
+        }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+        }
+
+        /* ===== CONTEÚDO PRINCIPAL ===== */
+        .container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 15px; 
+        }
+        .voto { 
+            background: white; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        }
+        .btn { 
+            display: inline-block; 
+            background: #e74c3c; 
+            color: white; 
+            padding: 8px 15px; 
+            text-decoration: none; 
+            border-radius: 3px; 
+        }
+
+        /* ===== RODAPÉ ===== */
         footer { 
             background: #2c3e50;
             color: white;
@@ -35,40 +79,44 @@
     </style>
 </head>
 <body>
+    <!-- CABEÇALHO -->
     <header>
         <h1>Central de Votações Freenbecky</h1>
         <p>Todos os links em um só lugar!</p>
     </header>
 
+    <!-- MENU DE NAVEGAÇÃO -->
     <nav>
         <ul>
-            <li><a href="#nineentertain">🎬 NineEntertain</a></li>
-            <li><a href="#kcl">🏆 KCL Awards</a></li>
+            <li><a href="#nineentertain"> NineEntertain</a></li>
+            <li><a href="#kcl"> KCL Awards</a></li>
+            <li><a href="#starlight"> Starlight Awards</a></li>
         </ul>
     </nav>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <div class="container">
-        <!-- Seção NineEntertain -->
+        <!-- SEÇÃO NINEENTERTAIN -->
         <div class="voto" id="nineentertain">
-            <h2> Prêmio NineEntertain 2025 </h2>
+            <h2>Prêmio NineEntertain 2025</h2>
+            
             <div class="link-voto">
-                <h3> Freen Sarocha Chankimha</h3>
+                <h3>Freen Sarocha Chankimha</h3>
                 <p>Categoria: Voto Popular</p>
                 <a href="https://9entertainawards.mcot.net/Vote/Candidate/A" class="btn" target="_blank">Votar Aqui</a>
             </div>
 
             <div class="link-voto">
-                <h3> Freenbecky </h3>
+                <h3>Freenbecky</h3>
                 <p>Categoria: Casal do Ano</p>
                 <a href="https://9entertainawards.mcot.net/Vote/Candidate/B" class="btn" target="_blank">Votar Aqui</a>
             </div>
         </div>
 
-        <!-- Seção KCL Awards -->
+        <!-- SEÇÃO KCL AWARDS -->
         <div class="voto" id="kcl">
-            <h2> KCL Awards 2025</h2>
+            <h2>KCL Awards 2025</h2>
             
-            <!-- Freen Sarocha -->
             <div class="candidato">
                 <h3>Freen Sarocha Chankimha</h3>
                 <div class="link-voto">
@@ -77,7 +125,6 @@
                 </div>
             </div>
 
-            <!-- Becky -->
             <div class="candidato">
                 <h3>Becky Rebecca Patricia Armstrong</h3>
                 <div class="link-voto">
@@ -92,8 +139,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- SEÇÃO STARLIGHT AWARDS -->
+        <div class="voto" id="starlight">
+            <h2> Starlight Awards 2025</h2>
+            
+            <div class="link-voto">
+                <h3>Freen Sarocha Chankimha</h3>
+                <p>Categoria: Artista Popular</p>
+                <a href="https://www.starlightawards.asia/vote" class="btn" target="_blank">Votar Aqui</a>
+            </div>
+
+            <div class="link-voto">
+                <h3>Becky Rebecca Armstrong</h3>
+                <p>Categoria: Artista Popular</p>
+                <a href="https://www.starlightawards.asia/vote" class="btn" target="_blank">Votar Aqui</a>
+            </div>
+
+            <div class="link-voto">
+                <h3>Freenbecky</h3>
+                <p>Categoria: Casal Popular</p>
+                <a href="https://www.starlightawards.asia/vote" class="btn" target="_blank">Votar Aqui</a>
+            </div>
+        </div>
     </div>
 
+    <!-- RODAPÉ -->
     <footer>
         <p style="margin: 0; padding: 5px;">Acompanhe atualizações nas redes sociais</p>
     </footer>
